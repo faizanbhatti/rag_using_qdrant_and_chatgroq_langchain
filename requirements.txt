@@ -1,0 +1,9 @@
+langchain
+sentence_transformers
+torch
+pypdf
+qdrant-client
+langchain-qdrant
+fastembed
+python-dotenv
+langchain-groq

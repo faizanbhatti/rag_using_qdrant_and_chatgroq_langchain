@@ -1,0 +1,18 @@
+#######################################
+Qdrant Vector Database guide (using docker image)
+#######################################
+
+Instructions:
+
+1. Make sure you have docker installed on your machine
+2. Make a latest pull of qdrant docker image using:
+
+docker pull qdrant/qdrant
+
+3. Once the image has been downloaded, you can run the service using:
+
+docker run -p 6333:6333 -p 6334:6334 \
+    -v $(pwd)/qdrant_storage:/qdrant/storage:z \
+    qdrant/qdrant
+
+For more information, see qdrant docs: https://qdrant.tech/documentation/quickstart/
