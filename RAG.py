@@ -115,7 +115,7 @@ def search_from_vector_db(
 
 
 # Load documents from a sample PDF file
-docs = document_loader("./data/sample_data.pdf")
+docs = document_loader("sample_data.pdf")
 
 # Ingest the documents into the vector database
 data_ingestion_to_vector_db(docs, embeddings, sparse_embeddings, url)
